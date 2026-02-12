@@ -267,6 +267,73 @@ section {
   border: 1px solid var(--border) !important;
 }
 
+.error-text {
+  display: block;
+  color: #ff7d7d;
+  min-height: 18px;
+  margin-top: 4px;
+  font-size: 0.86rem;
+}
+
+.form-success {
+  color: #8cffc0;
+  margin-top: 12px;
+  min-height: 20px;
+}
+
+.dom-lab {
+  max-width: 760px;
+  border: 1px solid var(--border);
+  background: rgba(18, 21, 29, 0.75);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+}
+
+.dom-lab h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+#domStatus {
+  color: #c9d7eb;
+}
+
+.dom-box {
+  width: 100px;
+  padding: 10px;
+  margin: 12px 0;
+  text-align: center;
+  border: 1px solid var(--border);
+  background: #10141c;
+  position: relative;
+  left: 0;
+  transition: left 0.35s ease;
+}
+
+.profile-preview {
+  width: min(220px, 100%);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-top: 8px;
+}
+
+.button-row {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.button-row .btn {
+  min-width: 130px;
+}
+
+.workspace-link-card {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 20px;
+}
+
 .connect {
   width: min(1080px, 92vw);
   margin: 28px auto 18px;

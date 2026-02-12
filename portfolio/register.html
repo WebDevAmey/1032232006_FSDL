@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amey Tarmale | Interactive Registration Lab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+  <div class="grid" aria-hidden="true"></div>
+
+  <main class="register-shell">
+    <section class="register-card">
+      <h1>Creator Account Setup</h1>
+      <p class="subtitle">Set up your account details, verify profile data instantly, and manage your profile workspace controls.</p>
+
+      <form id="studentForm" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="username">Username</label>
+            <input class="form-control" id="username" type="text" placeholder="Enter username" />
+            <small class="input-hint" id="usernameHint">Use letters/numbers only. Spaces are ignored.</small>
+            <span class="error-text" id="usernameError"></span>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control" id="email" type="email" placeholder="Enter email" />
+            <small class="input-hint" id="emailHint">Format: ab@xyz.in or ab@xyz.com</small>
+            <span class="error-text" id="emailError"></span>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="phone">Phone Number</label>
+            <input class="form-control" id="phone" type="text" placeholder="10 digit number" />
+            <small class="input-hint" id="phoneHint">Enter exactly 10 digits (0-9 only).</small>
+            <span class="error-text" id="phoneError"></span>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control" id="password" type="password" placeholder="Min 7 chars" />
+            <small class="input-hint" id="passwordHint">Must include 1 uppercase, 1 number, and 1 special: &amp; $ # @</small>
+            <span class="error-text" id="passwordError"></span>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="confirmPassword">Confirm Password</label>
+            <input class="form-control" id="confirmPassword" type="password" placeholder="Re-enter password" />
+            <small class="input-hint" id="confirmPasswordHint">Repeat the same password exactly.</small>
+            <span class="error-text" id="confirmPasswordError"></span>
+          </div>
+        </div>
+
+        <div class="button-row">
+          <button class="btn btn-info" id="submitBtn" type="submit">Create Secure Account</button>
+          <button class="btn btn-outline-light" id="enhanceBtn" type="button">Optimize Workspace UI</button>
+        </div>
+        <p class="form-success" id="formSuccess"></p>
+      </form>
+
+      <section class="registered-panel" id="registeredPanel">
+        <h2>Registered Profile</h2>
+        <div class="registered-content">
+          <img id="registeredImage" class="profile-preview" src="Profile .jpeg" alt="Registered profile preview" />
+          <div class="registered-meta">
+            <p><strong>Username:</strong> <span id="registeredUsername">-</span></p>
+            <p><strong>Email:</strong> <span id="registeredEmail">-</span></p>
+            <p><strong>Phone:</strong> <span id="registeredPhone">-</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-panel" id="featurePanel">
+        <h2>Profile Workspace Controls</h2>
+        <p id="domStatus">Profile workspace is ready.</p>
+        <ul id="domList">
+          <li class="dom-item">Initial tag one</li>
+          <li class="dom-item">Initial tag two</li>
+        </ul>
+
+        <div class="preview-row">
+          <div class="dom-box" id="moveTarget">Move Box</div>
+          <img id="profileImage" class="profile-preview" src="Profile .jpeg" alt="DOM image preview" />
+        </div>
+
+        <div class="button-row">
+          <button class="btn btn-outline-info" id="changeTextBtn" type="button">Refresh Feed Text</button>
+          <button class="btn btn-outline-info" id="styleBtn" type="button">Highlight and Reposition</button>
+          <button class="btn btn-outline-info" id="imageBtn" type="button">Swap Profile Banner</button>
+          <button class="btn btn-outline-info" id="addNodeBtn" type="button">Add Skill Tag</button>
+          <button class="btn btn-outline-danger" id="deleteNodeBtn" type="button">Remove Last Tag</button>
+        </div>
+      </section>
+
+      <div class="button-row back-link">
+        <a class="btn btn-outline-light" href="index.html">Back to Portfolio Home</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
