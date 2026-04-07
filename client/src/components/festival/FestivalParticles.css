@@ -1,0 +1,42 @@
+.kg-particles-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 9990;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.kg-particles-diya {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  z-index: 9990;
+  pointer-events: none;
+}
+
+.kg-p-confetti {
+  position: absolute;
+  top: -10px;
+  animation: confettiBurst ease-in infinite;
+}
+
+.kg-p-firefly {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #FFD600;
+  filter: drop-shadow(0 0 4px #FFD600) drop-shadow(0 0 8px #FF6F00);
+  animation: firefly ease-in-out infinite;
+}
+
+.kg-p-diya {
+  position: absolute;
+  bottom: 0;
+  animation: diyaFlicker ease-in-out infinite alternate;
+}
+
+.kg-p-diya svg {
+  animation: diwaLampGlow 2s ease-in-out infinite alternate;
+}

@@ -1,0 +1,45 @@
+.kg-story-banner {
+  background: var(--c-midnight);
+  padding: 80px 24px;
+}
+
+.kg-story-banner__grid {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.kg-story-banner__quote {
+  font-family: var(--f-display);
+  font-size: 44px;
+  font-style: italic;
+  color: var(--c-paper);
+  line-height: 1.2;
+}
+
+.kg-story-banner__image {
+  border-radius: var(--r-md);
+}
+
+.kg-story-banner__body {
+  font-family: var(--f-ui);
+  font-size: 14px;
+  color: var(--c-ink-3);
+  line-height: 1.7;
+  margin-top: 16px;
+}
+
+.kg-story-banner__link {
+  color: var(--c-clay);
+  display: inline-block;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .kg-story-banner__grid {
+    grid-template-columns: 1fr;
+  }
+}

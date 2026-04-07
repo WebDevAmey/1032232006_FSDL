@@ -1,0 +1,11 @@
+const router = require('express').Router();
+const c = require('../controllers/productController');
+const { protect } = require('../middleware/auth');
+router.get('/', c.getAll);
+router.get('/featured', c.getFeatured);
+router.get('/:slug', c.getOne);
+router.post('/', protect, c.create);
+router.patch('/:id', protect, c.update);
+router.patch('/:id/stock', protect, c.updateStock);
+router.delete('/:id', protect, c.remove);
+module.exports = router;

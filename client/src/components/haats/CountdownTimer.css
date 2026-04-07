@@ -1,0 +1,13 @@
+.kg-countdown {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  color: var(--c-rust);
+}
+
+.kg-countdown--live {
+  color: var(--c-sage);
+}
+
+.kg-countdown--done {
+  color: var(--c-ink-3);
+}

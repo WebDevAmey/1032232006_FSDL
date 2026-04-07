@@ -1,0 +1,74 @@
+.kg-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--r-sm);
+  letter-spacing: 0.02em;
+  transition: all 180ms ease;
+}
+
+.kg-btn--full {
+  width: 100%;
+}
+
+.kg-btn--primary {
+  background: var(--c-ink);
+  color: var(--c-white);
+  transition: transform 0.3s var(--ease-spring), background 0.2s ease;
+}
+.kg-btn--primary:hover {
+  background: var(--c-rust);
+}
+
+[data-festival="true"] .kg-btn--primary {
+  border: 1px solid var(--c-fest-gold);
+}
+
+.kg-btn--secondary {
+  border: var(--border);
+  color: var(--c-ink);
+}
+.kg-btn--secondary:hover {
+  border-color: var(--c-rust);
+  background: var(--c-rust-bg);
+}
+
+.kg-btn--ghost {
+  color: var(--c-rust);
+}
+.kg-btn--ghost:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.kg-btn--sm {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 13px;
+}
+
+.kg-btn--md {
+  height: 48px;
+  padding: 0 28px;
+  font-size: 13px;
+}
+
+.kg-btn--lg {
+  height: 56px;
+  padding: 0 36px;
+  font-size: 15px;
+}
+
+.kg-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.kg-btn__spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--c-white);
+  animation: spin 0.7s linear infinite;
+}

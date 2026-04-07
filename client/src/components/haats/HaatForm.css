@@ -1,0 +1,47 @@
+.kg-haat-form {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.kg-haat-field {
+  margin-bottom: 20px;
+}
+
+.kg-haat-field label {
+  display: block;
+  font-family: var(--f-ui);
+  font-size: 13px;
+  color: var(--c-ink-2);
+  margin-bottom: 6px;
+}
+
+.kg-haat-field input,
+.kg-haat-field select,
+.kg-haat-field textarea {
+  width: 100%;
+  border: var(--border);
+  border-radius: var(--r-sm);
+  padding: 10px 14px;
+  height: 44px;
+  background: var(--c-surface);
+}
+
+.kg-haat-field textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.kg-haat-field input:focus,
+.kg-haat-field select:focus,
+.kg-haat-field textarea:focus {
+  border-color: var(--c-rust);
+  outline: none;
+}
+
+.kg-haat-count {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  color: var(--c-ink-3);
+  text-align: right;
+  margin-top: 6px;
+}

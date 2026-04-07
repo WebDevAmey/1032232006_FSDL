@@ -1,0 +1,19 @@
+.kg-cart-page {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 40px;
+}
+
+.kg-cart-page__continue {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: var(--f-ui);
+  font-size: 13px;
+  color: var(--c-rust);
+}
+
+@media (max-width: 768px) {
+  .kg-cart-page {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,27 @@
+.kg-summary {
+  border: var(--border);
+  border-radius: var(--r-lg);
+  padding: 24px;
+}
+
+.kg-summary__row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--f-ui);
+  margin-bottom: 10px;
+}
+
+.kg-summary__divider {
+  height: 1px;
+  background: var(--c-line);
+  margin: 12px 0;
+}
+
+.kg-summary__total {
+  font-family: var(--f-display);
+  font-size: 24px;
+}
+
+.kg-summary button {
+  margin-top: 20px;
+}

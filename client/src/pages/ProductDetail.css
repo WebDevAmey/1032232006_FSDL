@@ -1,0 +1,240 @@
+.kg-pd {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-8);
+  align-items: start;
+}
+
+.kg-pd__category {
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  color: var(--c-rust);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.kg-pd__name {
+  margin: var(--sp-3) 0;
+  font-family: var(--f-display);
+  font-size: var(--t-display-lg);
+  line-height: 1.1;
+}
+
+.kg-pd__price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-5);
+}
+
+.kg-pd__price-val {
+  font-family: var(--f-display);
+  font-size: 32px;
+}
+
+.kg-pd__compare {
+  color: var(--c-ink-3);
+  text-decoration: line-through;
+}
+
+.kg-pd__desc {
+  color: var(--c-ink-2);
+  line-height: 1.7;
+  margin-bottom: var(--sp-5);
+}
+
+.kg-pd__qty {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-5);
+}
+
+.kg-pd__qty-btn {
+  width: 36px;
+  height: 36px;
+  border: var(--border);
+  border-radius: var(--r-md);
+  background: var(--c-surface);
+  font-size: var(--t-md);
+}
+
+.kg-pd__qty-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.kg-pd__qty-val {
+  min-width: 40px;
+  text-align: center;
+  font-family: var(--f-mono);
+  font-size: 18px;
+}
+
+.kg-pd__stock-hint {
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  color: var(--c-ink-3);
+}
+
+.kg-pd__add {
+  width: 100%;
+  padding: 16px;
+  border-radius: var(--r-md);
+  margin-bottom: var(--sp-5);
+  background: var(--c-ink);
+  color: var(--c-paper);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kg-pd__add--loading {
+  background: var(--c-ink-2);
+}
+
+.kg-pd__add--added {
+  background: var(--c-sage);
+}
+
+.kg-pd__add--soldout {
+  background: var(--c-line);
+  color: var(--c-ink-3);
+}
+
+.kg-pd__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-5);
+}
+
+.kg-pd__tag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: var(--border);
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+}
+
+.kg-pd__artisan {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-4);
+  border: var(--border);
+  border-radius: var(--r-lg);
+  color: inherit;
+  text-decoration: none;
+}
+
+.kg-pd__artisan:hover {
+  border-color: var(--c-rust);
+}
+
+.kg-pd__artisan-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: var(--c-rust-bg);
+  color: var(--c-rust);
+  font-family: var(--f-display);
+  font-size: var(--t-lg);
+  flex-shrink: 0;
+}
+
+.kg-pd__artisan-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kg-pd__artisan-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.kg-pd__artisan-name {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-weight: 500;
+}
+
+.kg-pd__artisan-check {
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: var(--c-sage-bg);
+  color: var(--c-sage);
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+}
+
+.kg-pd__artisan-craft {
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  color: var(--c-ink-3);
+}
+
+.kg-pd__artisan-cta {
+  color: var(--c-rust);
+  font-size: var(--t-sm);
+}
+
+.kg-pd__skeleton {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-8);
+}
+
+.kg-pd__sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: 12px var(--sp-5);
+  background: var(--c-surface);
+  border-top: var(--border);
+  animation: pageIn 0.25s ease forwards;
+}
+
+.kg-pd__sticky-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.kg-pd__sticky-price {
+  color: var(--c-rust);
+  font-family: var(--f-mono);
+}
+
+.kg-pd__sticky-btn {
+  padding: 10px 18px;
+  border-radius: var(--r-md);
+  background: var(--c-ink);
+  color: var(--c-paper);
+}
+
+@media (max-width: 768px) {
+  .kg-pd,
+  .kg-pd__skeleton {
+    grid-template-columns: 1fr;
+    gap: var(--sp-5);
+  }
+}
+
+@media (min-width: 769px) {
+  .kg-pd__sticky {
+    display: none;
+  }
+}

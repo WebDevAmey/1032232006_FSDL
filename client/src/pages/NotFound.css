@@ -1,0 +1,36 @@
+.kg-notfound {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.kg-notfound__icon {
+  font-family: var(--f-display);
+  font-size: 80px;
+  color: var(--c-line-dark);
+  animation: float 3s ease infinite;
+}
+
+.kg-notfound__title {
+  font-family: var(--f-display);
+  font-size: var(--t-display-md);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.kg-notfound__text {
+  color: var(--c-ink-3);
+}
+
+.kg-notfound__link {
+  margin-top: var(--sp-3);
+  color: var(--c-rust);
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

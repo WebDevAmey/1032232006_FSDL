@@ -1,0 +1,71 @@
+.kg-dna-result {
+  text-align: center;
+  animation: pageIn 0.4s var(--ease-out-expo) forwards;
+}
+
+.kg-dna-result__icon {
+  font-family: var(--f-display);
+  font-size: 80px;
+  line-height: 1;
+  animation: rangoliBlossom 0.6s var(--ease-spring) forwards;
+}
+
+.kg-dna-result__name {
+  margin-top: var(--sp-3);
+  font-family: var(--f-display);
+  font-size: 36px;
+  font-style: italic;
+}
+
+.kg-dna-result__tagline {
+  margin-top: var(--sp-2);
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.kg-dna-result__desc {
+  margin-top: var(--sp-4);
+  color: var(--c-ink-2);
+  line-height: 1.7;
+}
+
+.kg-dna-result__cats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: var(--sp-4);
+}
+
+.kg-dna-result__cat {
+  padding: 5px 12px;
+  border: var(--border);
+  border-radius: 999px;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+}
+
+.kg-dna-result__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-3);
+  margin-top: var(--sp-5);
+}
+
+.kg-dna-result__btn {
+  padding: 13px 24px;
+  border-radius: var(--r-md);
+}
+
+.kg-dna-result__btn--primary {
+  background: var(--c-ink);
+  color: var(--c-paper);
+}
+
+.kg-dna-result__btn--secondary {
+  border: var(--border);
+  color: var(--c-ink);
+}

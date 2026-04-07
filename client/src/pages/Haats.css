@@ -1,0 +1,42 @@
+.kg-haats-hero {
+  background: var(--c-midnight);
+  padding: 64px 0;
+  color: var(--c-paper);
+}
+
+.kg-haats-hero__title {
+  font-family: var(--f-display);
+  font-size: 56px;
+  font-style: italic;
+}
+
+.kg-haats-hero__subtitle {
+  font-family: var(--f-ui);
+  font-size: 16px;
+  color: var(--c-ink-3);
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.kg-haats-tabs {
+  background: var(--c-surface);
+  border-bottom: var(--border);
+}
+
+.kg-haats-tabs > div {
+  display: flex;
+  gap: 24px;
+}
+
+.kg-haats-tab {
+  padding: 16px 0;
+  font-family: var(--f-ui);
+  font-size: 13px;
+  color: var(--c-ink-3);
+  border-bottom: 2px solid transparent;
+}
+
+.kg-haats-tab--active {
+  color: var(--c-ink);
+  border-color: var(--c-rust);
+}

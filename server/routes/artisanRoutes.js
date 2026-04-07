@@ -1,0 +1,10 @@
+const router = require('express').Router();
+const c = require('../controllers/artisanController');
+const { protect, artisanOnly } = require('../middleware/auth');
+router.get('/me/dashboard', protect, artisanOnly, c.getDashboard);
+router.get('/me', protect, artisanOnly, c.getMine);
+router.get('/', c.getAll);
+router.get('/:slug', c.getOne);
+router.post('/', protect, artisanOnly, c.create);
+router.patch('/:id', protect, c.update);
+module.exports = router;

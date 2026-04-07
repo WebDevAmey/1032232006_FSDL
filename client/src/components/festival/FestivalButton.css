@@ -1,0 +1,41 @@
+.kg-fest-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--c-clay);
+  background: var(--c-clay-bg);
+  color: var(--c-clay);
+  font-family: var(--f-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.kg-fest-btn:hover {
+  transform: scale(1.05);
+}
+
+.kg-fest-btn__star {
+  animation: pulse 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+.kg-fest-btn--active {
+  background: color-mix(in srgb, var(--c-fest-gold) 18%, transparent);
+  border-color: var(--c-fest-gold);
+  color: var(--c-fest-gold);
+  animation: festGlow 2s ease-in-out infinite;
+}
+
+.kg-fest-btn--active .kg-fest-btn__star {
+  animation: pulse 0.8s ease-in-out infinite;
+}
+
+[data-festival="true"] .kg-fest-btn--active {
+  animation: festGlow 1.5s ease-in-out infinite;
+}

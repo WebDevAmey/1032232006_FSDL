@@ -1,0 +1,29 @@
+.kg-container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.kg-container--narrow {
+  max-width: 680px;
+}
+
+.kg-container--wide {
+  max-width: 100%;
+  padding: 0 32px;
+}
+
+.kg-container--full {
+  max-width: 100%;
+  padding: 0;
+}
+
+@media (max-width: 640px) {
+  .kg-container {
+    padding: 0 16px;
+  }
+  .kg-container--full {
+    padding: 0;
+  }
+}

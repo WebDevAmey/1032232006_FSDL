@@ -1,0 +1,30 @@
+.kg-marquee {
+  background: var(--c-ink);
+  height: 44px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.kg-marquee__track {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 28s linear infinite;
+  font-family: var(--f-mono);
+  font-size: 12px;
+  color: var(--c-clay);
+  letter-spacing: 0.15em;
+}
+
+.kg-marquee__track span {
+  padding-right: 12px;
+}
+
+.kg-marquee--festival {
+  background: linear-gradient(90deg, #FFE4A8, #FFD54F, #FFCC80);
+  transition: background 0.6s ease;
+}
+
+.kg-marquee--festival .kg-marquee__track {
+  color: var(--c-rust);
+}

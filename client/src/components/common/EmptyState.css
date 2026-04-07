@@ -1,0 +1,29 @@
+.kg-empty {
+  text-align: center;
+  padding: 96px 0;
+}
+
+.kg-empty__icon {
+  font-family: var(--f-display);
+  font-size: 64px;
+  color: var(--c-line);
+}
+
+.kg-empty__heading {
+  font-family: var(--f-display);
+  font-size: 28px;
+  font-style: italic;
+  color: var(--c-ink-2);
+  margin-top: 16px;
+}
+
+.kg-empty__subtext {
+  font-family: var(--f-ui);
+  font-size: 13px;
+  color: var(--c-ink-3);
+  margin-top: 6px;
+}
+
+.kg-empty__cta {
+  margin-top: 24px;
+}

@@ -1,0 +1,48 @@
+.kg-fest-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.kg-fest-price__label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-ink-2);
+}
+
+.kg-fest-price__label--highlight {
+  color: var(--c-rust);
+}
+
+.kg-fest-price__original {
+  font-size: var(--t-sm);
+  color: var(--c-ink);
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.kg-fest-price__value {
+  font-family: var(--f-display);
+  font-size: 28px;
+  color: var(--c-rust);
+  animation: priceFlash 2s ease-in-out infinite;
+}
+
+.kg-fest-price__badge {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--c-fest-saffron);
+  color: var(--c-midnight);
+  font-family: var(--f-mono);
+  font-size: 10px;
+}
+
+.kg-fest-price__note {
+  width: 100%;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  color: var(--c-ink-2);
+}

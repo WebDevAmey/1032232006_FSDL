@@ -1,0 +1,29 @@
+.kg-badge {
+  padding: 3px 8px;
+  border-radius: var(--r-sm);
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.kg-badge--rust {
+  background: var(--c-rust-bg);
+  color: var(--c-rust);
+}
+
+.kg-badge--clay {
+  background: var(--c-clay-bg);
+  color: var(--c-clay);
+}
+
+.kg-badge--sage {
+  background: var(--c-sage-bg);
+  color: var(--c-sage);
+}
+
+.kg-badge--gray {
+  background: var(--c-line);
+  color: var(--c-ink-2);
+}

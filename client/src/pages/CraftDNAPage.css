@@ -1,0 +1,14 @@
+.kg-dna-page {
+  min-height: 80vh;
+}
+
+.kg-dna-page .kg-dna-overlay {
+  position: static;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+.kg-dna-page .kg-dna-card {
+  box-shadow: none;
+  margin: 0 auto;
+}

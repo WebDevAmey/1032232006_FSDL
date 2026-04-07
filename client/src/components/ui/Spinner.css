@@ -1,0 +1,9 @@
+.kg-spinner {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--c-rust);
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}

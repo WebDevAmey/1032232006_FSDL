@@ -1,0 +1,44 @@
+.kg-neighborhood-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.kg-neighborhood-card {
+  border: var(--border);
+  border-radius: var(--r-md);
+  padding: 28px;
+  transition: all 220ms ease;
+}
+
+.kg-neighborhood-card--a {
+  background: var(--c-surface);
+}
+
+.kg-neighborhood-card--b {
+  background: var(--c-clay-bg);
+}
+
+.kg-neighborhood-card__name {
+  font-family: var(--f-display);
+  font-size: 24px;
+  font-style: italic;
+}
+
+.kg-neighborhood-card__count {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  color: var(--c-ink-3);
+  margin-top: 6px;
+}
+
+.kg-neighborhood-card:hover {
+  border-color: var(--c-rust);
+  background: var(--c-rust-bg);
+}
+
+@media (max-width: 640px) {
+  .kg-neighborhood-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

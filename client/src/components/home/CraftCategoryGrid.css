@@ -1,0 +1,38 @@
+.kg-craft-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.kg-craft-grid__item {
+  aspect-ratio: 1;
+  border: var(--border);
+  border-radius: var(--r-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--f-display);
+  font-size: 20px;
+  font-style: italic;
+  transition: all 220ms ease;
+}
+
+.kg-craft-grid__item--a {
+  background: var(--c-clay-bg);
+}
+
+.kg-craft-grid__item--b {
+  background: var(--c-rust-bg);
+}
+
+.kg-craft-grid__item:hover {
+  background: var(--c-rust);
+  color: var(--c-white);
+  border-color: var(--c-rust);
+}
+
+@media (max-width: 640px) {
+  .kg-craft-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

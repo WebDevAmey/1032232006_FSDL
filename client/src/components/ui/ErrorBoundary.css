@@ -1,0 +1,35 @@
+.kg-error-boundary {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: var(--sp-8) var(--sp-5);
+}
+
+.kg-error-boundary__card {
+  max-width: 460px;
+  border: var(--border);
+  border-radius: var(--r-xl);
+  background: var(--c-surface);
+  padding: var(--sp-7);
+  text-align: center;
+}
+
+.kg-error-boundary__title {
+  font-family: var(--f-display);
+  font-size: var(--t-display-md);
+  font-style: italic;
+  margin-bottom: var(--sp-3);
+}
+
+.kg-error-boundary__text {
+  color: var(--c-ink-2);
+  margin-bottom: var(--sp-5);
+}
+
+.kg-error-boundary__link {
+  color: var(--c-rust);
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}

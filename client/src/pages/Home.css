@@ -1,0 +1,120 @@
+.kg-home {
+  min-height: 100vh;
+}
+
+.kg-home__dna-section {
+  background: var(--c-ink);
+  color: var(--c-paper);
+}
+
+.kg-home__dna-wrap {
+  text-align: center;
+}
+
+.kg-home__dna-overline {
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  color: var(--c-clay);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.kg-home__dna-title {
+  margin-top: var(--sp-3);
+  font-family: var(--f-display);
+  font-size: clamp(36px, 5vw, 52px);
+  font-style: italic;
+  line-height: 1.1;
+}
+
+.kg-home__dna-subtitle {
+  margin-top: var(--sp-3);
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.kg-home__dna-button {
+  margin-top: var(--sp-5);
+}
+
+.kg-home__curated {
+  scroll-margin-top: 100px;
+}
+
+.kg-home__giftfinder-section {
+  background: linear-gradient(180deg, #FFF6D9 0%, #FFE8B5 100%);
+}
+
+.kg-home__giftfinder-head {
+  text-align: center;
+  margin-bottom: var(--sp-5);
+}
+
+.kg-home__giftfinder-overline {
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  color: var(--c-rust);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.kg-home__giftfinder-title {
+  margin-top: var(--sp-3);
+  font-family: var(--f-display);
+  font-size: clamp(30px, 4vw, 46px);
+  font-style: italic;
+  color: var(--c-ink);
+}
+
+.kg-home__giftfinder-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--sp-4);
+}
+
+.kg-home__giftfinder-card {
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(255, 159, 28, 0.35);
+  border-radius: var(--r-lg);
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 10px 30px rgba(255, 159, 28, 0.12);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.kg-home__giftfinder-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(255, 159, 28, 0.18);
+}
+
+.kg-home__giftfinder-image {
+  height: 220px;
+  object-fit: cover;
+}
+
+.kg-home__giftfinder-copy {
+  padding: var(--sp-4);
+}
+
+.kg-home__giftfinder-cardtitle {
+  font-family: var(--f-display);
+  font-size: 28px;
+  font-style: italic;
+  color: var(--c-ink);
+}
+
+.kg-home__giftfinder-subtitle {
+  margin-top: var(--sp-2);
+  color: var(--c-ink-2);
+}
+
+@media (max-width: 900px) {
+  .kg-home__giftfinder-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .kg-home__giftfinder-grid {
+    grid-template-columns: 1fr;
+  }
+}

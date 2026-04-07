@@ -1,0 +1,202 @@
+.kg-artisan-onboarding {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+
+.kg-artisan-onboarding__hero {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-5);
+  align-items: flex-start;
+}
+
+.kg-artisan-onboarding__overline {
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--c-rust);
+}
+
+.kg-artisan-onboarding__hero h1 {
+  margin-top: var(--sp-2);
+  font-family: var(--f-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-style: italic;
+}
+
+.kg-artisan-onboarding__steps {
+  display: grid;
+  gap: var(--sp-2);
+  min-width: 240px;
+}
+
+.kg-artisan-onboarding__step {
+  border: var(--border);
+  border-radius: var(--r-md);
+  padding: 10px 14px;
+  background: var(--c-surface);
+  opacity: 0.65;
+}
+
+.kg-artisan-onboarding__step.is-active {
+  opacity: 1;
+  border-color: var(--c-rust);
+}
+
+.kg-artisan-onboarding__step span {
+  display: block;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  color: var(--c-ink-3);
+  text-transform: uppercase;
+}
+
+.kg-artisan-onboarding__step strong {
+  display: block;
+  margin-top: 4px;
+  font-size: var(--t-sm);
+}
+
+.kg-artisan-onboarding .card-section {
+  border: var(--border);
+  border-radius: var(--r-lg);
+  background: var(--c-surface);
+  padding: var(--sp-5);
+}
+
+.kg-artisan-onboarding h2 {
+  font-family: var(--f-display);
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: var(--sp-4);
+}
+
+.kg-artisan-onboarding .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.kg-artisan-onboarding .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kg-artisan-onboarding .form-group--full {
+  grid-column: 1 / -1;
+}
+
+.kg-artisan-onboarding label {
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--c-ink-3);
+}
+
+.kg-artisan-onboarding input,
+.kg-artisan-onboarding select,
+.kg-artisan-onboarding textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: var(--border);
+  border-radius: var(--r-sm);
+  background: var(--c-paper);
+  font: inherit;
+}
+
+.kg-artisan-onboarding input,
+.kg-artisan-onboarding select {
+  height: 44px;
+}
+
+.kg-artisan-onboarding__checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: var(--sp-4);
+}
+
+.kg-artisan-onboarding__checks label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--f-ui);
+  font-size: var(--t-sm);
+  color: var(--c-ink-2);
+}
+
+.kg-artisan-onboarding__products-head,
+.kg-artisan-onboarding__product-bar,
+.kg-artisan-onboarding__footer,
+.kg-artisan-onboarding__finish-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  align-items: center;
+}
+
+.kg-artisan-onboarding__products-head p {
+  color: var(--c-ink-2);
+}
+
+.kg-artisan-onboarding__product-stack {
+  display: grid;
+  gap: var(--sp-4);
+}
+
+.kg-artisan-onboarding__product-card {
+  border-top: var(--border);
+  padding-top: var(--sp-4);
+}
+
+.kg-artisan-onboarding__product-bar button {
+  color: var(--c-rust);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.kg-artisan-onboarding__footer {
+  justify-content: flex-end;
+}
+
+.kg-artisan-onboarding__error {
+  padding: 12px 16px;
+  border-radius: var(--r-md);
+  background: var(--c-rust-bg);
+  color: var(--c-rust);
+}
+
+.kg-artisan-onboarding__loading {
+  height: 420px;
+}
+
+@media (max-width: 900px) {
+  .kg-artisan-onboarding__hero {
+    flex-direction: column;
+  }
+
+  .kg-artisan-onboarding__steps {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .kg-artisan-onboarding .form-grid,
+  .kg-artisan-onboarding__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .kg-artisan-onboarding__products-head,
+  .kg-artisan-onboarding__footer,
+  .kg-artisan-onboarding__finish-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

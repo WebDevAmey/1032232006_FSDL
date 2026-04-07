@@ -1,0 +1,32 @@
+.kg-auth {
+  max-width: 440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.kg-auth h2 {
+  font-family: var(--f-display);
+  font-size: 28px;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.kg-auth input {
+  border: var(--border);
+  border-radius: var(--r-sm);
+  padding: 10px 14px;
+  height: 44px;
+  background: var(--c-surface);
+}
+
+.kg-auth__switch {
+  font-family: var(--f-ui);
+  font-size: 13px;
+  color: var(--c-ink-2);
+}
+
+.kg-auth__switch a {
+  color: var(--c-rust);
+}

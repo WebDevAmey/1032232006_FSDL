@@ -1,0 +1,10 @@
+.kg-filterbar {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+}
+
+.kg-filterbar::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,39 @@
+.kg-stock {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: opacity 300ms ease;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.kg-stock__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--c-ink-3);
+}
+
+.kg-stock--clay {
+  color: var(--c-clay);
+}
+.kg-stock--clay .kg-stock__dot {
+  background: var(--c-clay);
+}
+
+.kg-stock--rust {
+  color: var(--c-rust);
+}
+.kg-stock--rust .kg-stock__dot {
+  background: var(--c-rust);
+  animation: pulse 1.2s ease infinite;
+}
+
+.kg-stock--gray {
+  color: var(--c-ink-3);
+}
+
+.kg-stock__text--strike {
+  text-decoration: line-through;
+}

@@ -1,0 +1,33 @@
+.kg-artisan-story {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 32px;
+  align-items: center;
+}
+
+.kg-artisan-story__overline {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--c-rust);
+  margin-bottom: 12px;
+}
+
+.kg-artisan-story__text {
+  font-family: var(--f-display);
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.kg-artisan-story__right img {
+  border-radius: var(--r-md);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .kg-artisan-story {
+    grid-template-columns: 1fr;
+  }
+}

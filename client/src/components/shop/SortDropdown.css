@@ -1,0 +1,8 @@
+.kg-sort {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  border: var(--border);
+  border-radius: var(--r-sm);
+  padding: 8px 12px;
+  background: var(--c-surface);
+}

@@ -1,0 +1,28 @@
+.kg-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--c-ink);
+  color: var(--c-white);
+  padding: 12px 20px;
+  border-radius: var(--r-md);
+  font-family: var(--f-ui);
+  font-size: 14px;
+  z-index: 400;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 180ms ease;
+}
+
+.kg-toast--show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.kg-toast--success {
+  border-left: 3px solid var(--c-sage);
+}
+
+.kg-toast--error {
+  border-left: 3px solid var(--c-rust);
+}

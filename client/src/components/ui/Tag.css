@@ -1,0 +1,23 @@
+.kg-tag {
+  padding: 6px 14px;
+  border: var(--border);
+  border-radius: var(--r-sm);
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  transition: all 180ms ease;
+  background: transparent;
+}
+
+.kg-tag:hover {
+  border-color: var(--c-rust);
+  color: var(--c-rust);
+}
+
+.kg-tag--active {
+  background: var(--c-ink);
+  color: var(--c-white);
+  border-color: var(--c-ink);
+}

@@ -1,0 +1,9 @@
+.kg-section {
+  padding: 80px 0;
+}
+
+@media (max-width: 640px) {
+  .kg-section {
+    padding: 48px 0;
+  }
+}

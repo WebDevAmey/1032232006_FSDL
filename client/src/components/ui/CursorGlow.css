@@ -1,0 +1,42 @@
+.kg-cursor-dot,
+.kg-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform;
+}
+
+.kg-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--c-rust);
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.1s var(--ease-spring), opacity 0.2s ease;
+}
+
+.kg-cursor-ring {
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid var(--c-rust);
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: border-color 0.3s ease, opacity 0.3s ease, background 0.3s ease;
+}
+
+.kg-cursor-ring.hover {
+  transform: scale(1.8) !important;
+  background: rgba(168, 64, 28, 0.06);
+  border-color: var(--c-clay);
+  opacity: 0.8;
+}
+
+[data-festival="true"] .kg-cursor-dot { background: var(--c-fest-gold); }
+[data-festival="true"] .kg-cursor-ring { border-color: var(--c-fest-saffron); }
+
+@media (max-width: 768px) {
+  .kg-cursor-dot,
+  .kg-cursor-ring { display: none; }
+}

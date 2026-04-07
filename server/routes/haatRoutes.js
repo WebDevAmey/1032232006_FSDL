@@ -1,0 +1,11 @@
+const router = require('express').Router();
+const c = require('../controllers/haatController');
+const { protect, artisanOnly } = require('../middleware/auth');
+router.get('/', c.getAll);
+router.get('/:slug', c.getOne);
+router.post('/', protect, artisanOnly, c.create);
+router.patch('/:id', protect, c.update);
+router.post('/:id/join', protect, artisanOnly, c.joinRequest);
+router.patch('/:id/participants/:artisanId', protect, c.updateParticipant);
+router.post('/:id/rsvp', protect, c.rsvp);
+module.exports = router;

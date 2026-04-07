@@ -1,0 +1,64 @@
+.kg-fest-banner {
+  position: relative;
+  height: 48px;
+  overflow: hidden;
+  z-index: 100;
+  animation: slideInFestival 0.4s ease forwards;
+}
+
+.kg-fest-banner__stripe {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    #FF6F00 0px, #FF6F00 4px,
+    #FFD600 4px, #FFD600 8px
+  );
+}
+
+.kg-fest-banner__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+  height: 100%;
+  padding: 0 var(--sp-5);
+  background: rgba(255, 248, 232, 0.84);
+}
+
+.kg-fest-banner__label {
+  flex-shrink: 0;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  color: var(--c-rust);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.kg-fest-banner__marquee-wrap {
+  flex: 1;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.kg-fest-banner__marquee {
+  display: inline-block;
+  white-space: nowrap;
+  color: var(--c-ink);
+  animation: marquee 20s linear infinite;
+}
+
+.kg-fest-banner__countdown {
+  flex-shrink: 0;
+  font-family: var(--f-mono);
+  font-size: 12px;
+  color: var(--c-rust);
+}
+
+@media (max-width: 640px) {
+  .kg-fest-banner__label,
+  .kg-fest-banner__countdown {
+    display: none;
+  }
+}
